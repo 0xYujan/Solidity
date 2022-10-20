@@ -5,12 +5,12 @@ Solidity supports three types of variables
 - `Local`
 - `Global`
 
-## `State`: 
-        - Variables whose values are premanently stored in a contract storage.
-        - Declared outside a function
-        - Stored on the blockchain
+## State: 
+- Variables whose values are premanently stored in a contract storage.
+- Declared outside a function
+- Stored on the blockchain
 
-```py
+```solidity
 pragma solidity ^0.8.0;
 contract State {
    uint storedData;      // State variable
@@ -20,12 +20,12 @@ contract State {
 }
 ```
 
-## `Local`:
-        - Variables whose values are available only within a function where it is defined. Function parameters are always local to that function.
-        - Declared inside a function
-        - Not stored on the blockchain
+## Local:
+- Variables whose values are available only within a function where it is defined. Function parameters are always local to that function.
+- Declared inside a function
+- Not stored on the blockchain
 
-```py
+```solidity
 pragma solidity ^0.8.0;
 contract Local {
    
@@ -38,8 +38,8 @@ contract Local {
 }
 ```
 
-## `Global`
-        - These are special variables which exist in global workspace and provide information about the blockchain and transaction properties.
+## Global
+- These are special variables which exist in global workspace and provide information about the blockchain and transaction properties.
 
 |Name |	Returns|
 |----|----|
