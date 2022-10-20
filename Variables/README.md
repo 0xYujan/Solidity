@@ -6,7 +6,7 @@ Solidity supports three types of variables
 - `Global`
 
 ## State: 
-- Variables whose values are premanently stored in a contract storage.
+- Variables whose values are permanently stored in contract storage.
 - Declared outside a function
 - Stored on the blockchain
 
@@ -39,7 +39,7 @@ contract Local {
 ```
 
 ## Global
-- These are special variables which exist in global workspace and provide information about the blockchain and transaction properties.
+- These are special variables that exist in the global workspace and provide information about the blockchain and transaction properties.
 
 |Name |	Returns|
 |----|----|
