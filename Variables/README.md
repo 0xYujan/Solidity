@@ -57,3 +57,67 @@ contract Local {
 |now (uint)|	Current block timestamp|
 |tx.gasprice (uint)|	Gas price of the transaction|
 |tx.origin (address payable)|	Sender of the transaction|
+
+## Constant
+
+- Constants are variables that cannot be modified.
+- Their value is hard coded and using constants can save gas cost.
+
+```solidity
+
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract Constants {
+    // coding convention to uppercase constant variables
+    address public constant  MY_ADDRESS = 0x88254d535dc8186E00C04B660d1EEf13e816665c;
+    uint public constant MY_UINT = 123;
+}
+
+```
+
+## Immutable
+
+- Immutable variables are like constants. Values of immutable variables can be set inside the constructor but cannot be modified afterward.
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract Immutable {
+    // coding convention to uppercase constant variables
+    address public immutable MyAddress;
+    uint public immutable MyUint;
+
+    constructor(uint _MyUint) {
+        MyAddress = msg.sender;
+        MyUint = _MyUint;
+    }
+}
+```
+
+## Reading and Writing to a State Variable
+
+- To write or update a state variable you need to send a transaction.
+- On the other hand, you can read state variables, for free, without any transaction fee.
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract SimpleStorage {
+    // State variable to store a number
+    uint public num;
+
+    // You need to send a transaction to write to a state variable.
+    function set(uint _num) public {
+        num = _num;
+    }
+
+    // You can read from a state variable without sending a transaction.
+    function get() public view returns (uint) {
+        return num;
+    }
+}
+```
+
