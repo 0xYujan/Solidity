@@ -1,9 +1,9 @@
 ## IF / ELSE
 
-Solidity supports conditional statements if, else if and else.
+Solidity supports conditional statements `if`, `else if` and `else`.
 
 # Syntax
-The syntax of an if-else-if statement is as follows −
+The syntax of an `if-else-if` statement is as follows −
 
 ```solidity
 if (expression 1) {
