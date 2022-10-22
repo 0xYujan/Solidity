@@ -15,7 +15,7 @@ The flow chart of while loop looks as follows −
 
 ![while_loop](https://user-images.githubusercontent.com/63731234/197352693-5dc2aeab-b383-4401-9a82-6871372623cf.jpg)
 
-Syntax
+# Syntax
 
 The syntax of `while loop` in Solidity is as follows −
 
