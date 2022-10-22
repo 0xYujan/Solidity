@@ -18,3 +18,5 @@ if (expression 1) {
 ```
 
 There is nothing special about this code. It is just a series of if statements, where each if is a part of the else clause of the previous statement. Statement(s) is executed based on the true condition, if none of the conditions is true, then the else block is executed.
+
+## [Example](https://github.com/0xYujan/Solidity/blob/main/If_Else/IfElse.sol)
