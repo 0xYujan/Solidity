@@ -19,11 +19,11 @@ pragma solidity ^0.8.0;
 
 contract Mapping
 {
-    mapping(uint => string) public roll_no;
+    mapping(uint => string) public students;
 
-    function map(uint keys, string memory name) public 
+    function map(uint roll_no, string memory name) public 
     {
-        roll_no[keys] = name;
+        students[roll_no] = name;
     }
 }
 ```
