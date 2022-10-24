@@ -27,3 +27,8 @@ contract Mapping
     }
 }
 ```
+
+- The key cannot type mapping, dynamic array, enum, and struct.
+- The values can be of any type.
+- Mappings are always stored in storage irrespective of whether they are declared in contract storage or not.
+
