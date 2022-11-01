@@ -109,3 +109,32 @@ function checkOverflow(uint _num1, uint _num2) public pure returns(string memory
 }
 
 ```
+
+## [Example 2](https://github.com/0xYujan/Solidity/blob/3c201b942e6b1adf906ca891f1649ea68b6b3c24/Error/Example2.sol)
+
+`Require` should be used to validate conditions such as:
+- inputs
+- conditions before execution
+- return values from calls to other functions
+
+`Revert` is useful when the condition to check is complex.
+- This code does the exact same thing as the example above
+
+`Assert` should only be used to test for internal errors,
+and to check invariants.
+- Here we assert that num is always equal to 0
+- since it is impossible to update the value of num
+
+`Custom error`
+Output like 
+
+![Screenshot 2022-11-01 220845](https://user-images.githubusercontent.com/63731234/199284800-193b108d-e44a-4264-bb49-de73baca0160.png)
+
+
+## [Example 3](https://github.com/0xYujan/Solidity/blob/923abcb08efd260088fca1a5c35d956054663119/Error/Example3.sol)
+Output:
+
+![OutPut](https://user-images.githubusercontent.com/63731234/199287822-3d9975b5-b4b4-4d47-a206-61db914900ba.png)
+
+
+
