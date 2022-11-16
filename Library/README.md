@@ -44,6 +44,7 @@ A library can be defined on the same contract as well as it can be imported from
 <h3>Example:</h3>
 
 import <libraryName> from “./library-file.sol”;
+
 A single file can contain multiple libraries that can be specified using curly braces in the import statement separated by a comma. A library can be accessed within the smart contract by using `for` keyword. 
 
   <h3>Syntax:</h3>
