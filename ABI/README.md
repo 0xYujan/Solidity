@@ -30,6 +30,8 @@ A quick analysis of the result shows us that it has 64 bytes. This is because th
 
 The first 32 bytes contain the address (20 bytes) and the other 32 bytes contain the integer
 
+[Example](https://github.com/0xYujan/Solidity/blob/4244cb5fecebe8e6395a17b567205b8a3c0a6c63/ABI/Encode.sol)
+
 ## Abi Decoding
 
 <h2>Decoding the parameters of a function using abi.decode()</h2>
@@ -71,3 +73,5 @@ You might expect, perhaps, that the return would be 96 bytes (3 x 32), because w
  ![decode](https://user-images.githubusercontent.com/63731234/202760128-c80e09a4-3908-4b48-bdf2-de76bb72aa5e.png)
 
  
+ [Example](https://github.com/0xYujan/Solidity/blob/4244cb5fecebe8e6395a17b567205b8a3c0a6c63/ABI/Decode.sol)
+
